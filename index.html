@@ -12,11 +12,26 @@
       color: #fff;
       overflow-x: hidden;
       animation: scrollBackground 10s linear infinite;
+      position: relative;
     }
 
     @keyframes scrollBackground {
       0% { background-position: 0 0; }
       100% { background-position: 0 100%; }
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    .glitch {
+      animation: glitch 0.3s infinite;
+      display: inline-block;
     }
 
     .container {
@@ -87,6 +102,14 @@
       color: #ff6f61;
     }
 
+    .logo {
+      display: block;
+      margin: 1rem auto;
+      max-width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 80, 0.3);
+    }
+
     footer {
       text-align: center;
       margin-top: 3rem;
@@ -97,7 +120,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>RUGGED BEAR ($RGBR)</h1>
+    <img src="images/bear.png" alt="Rugged Bear Logo" class="logo" />
+    <h1 class="glitch">RUGGED BEAR ($RGBR)</h1>
     <p>
       Every coin I bought tanked. Every token I trusted vanished.<br />
       So I made my own — backed not by hype, but by the rage of a bear who's had ENOUGH.
@@ -116,9 +140,9 @@
     <div class="section links">
       <h2>🔗 Links</h2>
       <a href="https://pump.fun/coin/C2PPmD5LSGBq8asdvk4Ho6K2B2Wf44SMqZQnqYRcpump" target="_blank">Pump.fun Launch Page</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://t.me" target="_blank">Telegram</a>
-      <a href="https://dexscreener.com" target="_blank">Chart (DexScreener)</a>
+      <a href="https://twitter.com/ruggedbear" target="_blank">Twitter</a>
+      <a href="https://t.me/ruggedbear" target="_blank">Telegram</a>
+      <a href="https://dexscreener.com/solana/C2PPmD5LSGBq8asdvk4Ho6K2B2Wf44SMqZQnqYRcpump" target="_blank">Chart (DexScreener)</a>
     </div>
     <footer>
       No VC. No BS. Just justice.<br />
