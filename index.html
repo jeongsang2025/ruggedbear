@@ -2,88 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RUGGED BEAR ($RGBR)</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #0e0e0e;
-      color: white;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      overflow-x: hidden;
+      animation: scrollBackground 10s linear infinite;
     }
-    header {
-      background: #1c1c1c;
-      padding: 2rem;
-      text-align: center;
+
+    @keyframes scrollBackground {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 0 auto 1rem auto;
-      line-height: 1.6;
-    }
+
     .container {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    .tokenomics, .links {
-      background: #222;
-      padding: 1rem;
-      margin: 2rem 0;
+      background-color: #1a1a1a;
       border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
     }
-    img {
-      max-width: 200px;
-      border-radius: 20px;
-    }
-    a {
-      color: #00ffcc;
-    }
-    .footer {
+
+    h1 {
       text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .section {
+      margin-top: 2rem;
       padding: 1rem;
+      background-color: #222;
+      border-radius: 8px;
+    }
+
+    .section h2 {
+      color: #ff6f61;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section ul li {
+      margin: 0.5rem 0;
+    }
+
+    .links a {
+      color: #00d8ff;
+      text-decoration: none;
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>RUGGED BEAR ($RGBR)</h1>
-    <img src="https://i.imgur.com/FvVKc0I.png" alt="Rugged Bear" />
-    <p>Every coin I bought tanked. Every token I trusted vanished.<br>
-    So I made my own — backed not by hype, but by the rage of a bear who's had ENOUGH.</p>
-  </header>
-
   <div class="container">
-    <section class="tokenomics">
+    <h1>RUGGED BEAR ($RGBR)</h1>
+    <p>
+      Every coin I bought tanked. Every token I trusted vanished.<br />
+      So I made my own — backed not by hype, but by the rage of a bear who's had ENOUGH.
+    </p>
+    <div class="section">
       <h2>🚀 Tokenomics</h2>
-      <p><strong>Supply:</strong> 100,000,000,000</p>
-      <p><strong>VC:</strong> 0%</p>
-      <p><strong>Taxes:</strong> 0%</p>
-      <p><strong>Initial LP:</strong> Pump.fun</p>
-      <p><strong>Chain:</strong> Solana</p>
-      <p><strong>Contract:</strong> <code>[컨트랙트 주소]</code></p>
-    </section>
-
-    <section class="links">
-      <h2>🔗 Links</h2>
       <ul>
-        <li><a href="https://pump.fun/FGd3xM......" target="_blank">Pump.fun Launch Page</a></li>
-        <li><a href="https://twitter.com/yourRGBR" target="_blank">Twitter</a></li>
-        <li><a href="https://t.me/yourRGBRchat" target="_blank">Telegram</a></li>
-        <li><a href="https://dexscreener.com/solana/..." target="_blank">Chart (DexScreener)</a></li>
+        <li><strong>Supply:</strong> 100,000,000,000</li>
+        <li><strong>VC:</strong> 0%</li>
+        <li><strong>Taxes:</strong> 0%</li>
+        <li><strong>Initial LP:</strong> Pump.fun</li>
+        <li><strong>Chain:</strong> Solana</li>
+        <li><strong>Contract:</strong> C2PPmD5LSGBq8asdvk4Ho6K2B2Wf44SMqZQnqYRcpump</li>
       </ul>
-    </section>
-  </div>
-
-  <div class="footer">
-    No VC. No BS. Just justice. <br/>© 2025 RUGGED BEAR. All Rights Rugged.
+    </div>
+    <div class="section links">
+      <h2>🔗 Links</h2>
+      <a href="#">Pump.fun Launch Page</a>
+      <a href="#">Twitter</a>
+      <a href="#">Telegram</a>
+      <a href="#">Chart (DexScreener)</a>
+    </div>
+    <footer>
+      No VC. No BS. Just justice.<br />
+      © 2025 RUGGED BEAR. All Rights Rugged.
+    </footer>
   </div>
 </body>
 </html>
