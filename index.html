@@ -7,8 +7,8 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(#111, #1a1a1a);
       color: #fff;
       overflow-x: hidden;
       animation: scrollBackground 10s linear infinite;
@@ -21,20 +21,35 @@
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 2rem auto;
       padding: 2rem;
       background-color: #1a1a1a;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 0, 80, 0.4);
+      animation: slideDown 1s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     h1 {
       text-align: center;
+      font-size: 2.4rem;
+      color: #ff6f61;
     }
 
     p {
       text-align: center;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
 
     .section {
@@ -45,23 +60,31 @@
     }
 
     .section h2 {
-      color: #ff6f61;
+      color: #ffb347;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
     }
 
     .section ul {
       list-style: none;
       padding-left: 0;
+      line-height: 1.6;
     }
 
     .section ul li {
-      margin: 0.5rem 0;
+      margin: 0.3rem 0;
     }
 
     .links a {
       color: #00d8ff;
       text-decoration: none;
       display: block;
-      margin: 0.5rem 0;
+      margin: 0.3rem 0;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #ff6f61;
     }
 
     footer {
